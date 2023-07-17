@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,d;
+
+	clrscr();
+
+	printf("Enter a=");
+	scanf("%d",&a);
+
+	printf("Enter b=");
+	scanf("%d",&b);
+
+	printf("Enter c=");
+	scanf("%d",&c);
+
+	printf("Enter d=");
+	scanf("%d",&d);
+
+	if(a==b && b==c && c==d && d==a)
+	{
+		printf("all are same");
+	}
+	else if(a>b)
+	{
+		if(a>c)
+		{
+			if(a>d)
+			{
+				printf("a is big %d",a);
+			}
+			else
+			{
+				printf("d is big %d",d);
+			}
+		}
+		else
+		{
+			if(c>d)
+			{
+				printf("c is big %d",c);
+			}
+			else
+			{
+				printf("d is big %d",d);
+			}
+		}
+	}
+	else
+	{
+		if(b>c)
+		{
+			if(b>d)
+			{
+				printf("b is big &d",b);
+			}
+			else
+			{
+				printf("d is big %d",d);
+			}
+		}
+		else
+		{
+			if(c>d)
+			{
+				printf("c is big %d",c);
+			}
+			else
+			{
+				printf("d is big %d",d);
+			}
+		}
+	}
+
+	getch();
+}
+
+

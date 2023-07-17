@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+main()
+{
+	char str[20];
+	
+	printf("Enter any character: ");
+	scanf("%s",&str);
+	
+	int i;
+	
+	for(i=0;i<20;i++)
+	{
+		if(str[i] >= 65 && str[i] <= 90)
+		{
+			str[i] = str[i] + 32;
+		}
+		else if(str[i] >= 97 && str[i] <= 122)
+		{
+			str[i] = str[i] - 32;
+		}
+	}
+	printf("Converted string: %s",str);
+	
+}
